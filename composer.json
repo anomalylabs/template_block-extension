@@ -1,0 +1,9 @@
+{
+    "name": "anomaly/template_block-extension",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Anomaly\\TemplateBlockExtension\\": "src/"
+        }
+    }
+}
