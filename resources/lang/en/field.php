@@ -2,6 +2,7 @@
 
 return [
     'template' => [
-        'name' => 'Template',
+        'name'         => 'Template',
+        'instructions' => 'Select the template to include.',
     ],
 ];
