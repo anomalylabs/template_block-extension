@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'Template Block',
+    'title'       => 'Template',
     'name'        => 'Template Block Extension',
-    'description' => ''
+    'description' => 'Include a template.',
 ];
