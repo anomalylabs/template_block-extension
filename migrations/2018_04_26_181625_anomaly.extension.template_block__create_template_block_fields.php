@@ -1,7 +1,6 @@
 <?php
 
 use Anomaly\Streams\Platform\Database\Migration\Migration;
-use Anomaly\TemplateBlockExtension\Support\RelationshipFieldType\TemplateOptions;
 use Anomaly\TemplatesModule\Template\TemplateModel;
 
 /**
@@ -23,9 +22,8 @@ class AnomalyExtensionTemplateBlockCreateTemplateBlockFields extends Migration
         'template' => [
             'type'   => 'anomaly.field_type.relationship',
             'config' => [
-                'mode'    => 'search',
+                'mode'    => 'lookup',
                 'related' => TemplateModel::class,
-                'handler' => TemplateOptions::class,
             ],
         ],
     ];
