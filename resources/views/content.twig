@@ -1,9 +1,9 @@
 {% if block.template.extension == 'twig' %}
     {% include block.template.location %}
 {% elseif block.template.extension == 'md' %}
-    {{ block.template.content|markdown|raw }}
+    {{ block.template.content.parse|markdown|raw }}
 {% elseif block.template.extension == 'html' %}
-    {{ block.template.content|raw }}
+    {{ block.template.content.value|raw }}
 {% elseif block.template.extension in ['css', 'scss', 'less'] %}
     <style type="text/css">
         {{ asset_inline(block.template.location)|raw }}
