@@ -14,6 +14,13 @@ class TemplateBlockExtension extends BlockExtension
 {
 
     /**
+     * The extension category.
+     *
+     * @var string
+     */
+    protected $category = 'module';
+
+    /**
      * This extension provides a template
      * extension for the Blocks Module.
      *
